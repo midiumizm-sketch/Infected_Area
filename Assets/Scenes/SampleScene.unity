@@ -614,6 +614,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f301d457424970742a21b33c0a917e86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameFeelManager
+--- !u!1 &524821541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 524821542}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &524821542
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524821541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1159443490}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,6 +743,7 @@ GameObject:
   - component: {fileID: 1159443487}
   - component: {fileID: 1159443491}
   - component: {fileID: 1159443492}
+  - component: {fileID: 1159443493}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -833,6 +865,7 @@ Transform:
   m_Children:
   - {fileID: 430333678}
   - {fileID: 487773729}
+  - {fileID: 524821542}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1159443491
@@ -903,6 +936,21 @@ MonoBehaviour:
   swingDuration: 0.12
   swingArc: 100
   attackOriginDistance: 0.6
+--- !u!114 &1159443493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159443486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3897febcc8595b49b147a024e1c3519, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  arrowPrefab: {fileID: 8708362516675183835, guid: 23b4468fe205df74c9cbfc963c1ddcd1, type: 3}
+  firePoint: {fileID: 524821542}
+  attacksPerSecond: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
